@@ -1,0 +1,62 @@
+
+<html>
+<head>
+    <style>
+        body
+        {
+            background-color:black;
+            color:white;
+        }
+        .gomb
+        {
+            background-color:#00ff90;
+            height:60px;
+            width:100px;
+            border-radius:40px;
+            margin:30px;
+        }
+        .gomb:hover
+        {
+            background-color:#00a9ff;
+        }
+        h1, p {
+            margin: 30px;
+            font-size: 29px;
+            color: #00ff90
+       
+        }
+    </style>
+    <script>
+          function gomb()
+        {
+            var a = document.getElementById("cim");
+            var b = document.getElementById("szoveg");
+            a.textContent = "Üdv felhasználó!";
+            b.textContent = ":)";
+
+        }
+        function gomb1() {
+            var a = document.getElementById("cim");
+            var b = document.getElementById("szoveg");
+            a.textContent = "Dom-model";
+            b.textContent = "Készítette:Péterfi Veronika 11.a.o";
+
+        }
+    </script>
+</head>
+<body>
+    
+    <ul>
+        <li>Név link ide </li>
+      <h2 onclick="gomsz(this)">katt rá!</h2>
+    </ul>
+
+    <h1 id="cim"> Dom-model</h1>
+    <p id="szoveg">Készítette:Péterfi Veronika 11.a.o</p>
+    <input type="button" name="gomb" value="Átalakítás" onclick="gomb()"
+           class="gomb" />
+
+    <input type="button" name="gomb1" value="Visszaállítás" onclick="gomb1()"
+           class="gomb" />
+</body>
+</html>
